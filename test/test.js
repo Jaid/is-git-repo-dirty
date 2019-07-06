@@ -1,4 +1,5 @@
 import path from "path"
+import os from "os"
 
 const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.join(__dirname, "..", "src")) |> require
 
@@ -7,7 +8,12 @@ const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.jo
    */
 const {default: isGitRepoDirty} = indexModule
 
-it("should run", () => {
-  const result = isGitRepoDirty()
-  expect(result).toBeGreaterThan(1549410770)
+it("should run for a non-repository", async () => {
+  const result = await isGitRepoDirty(os.homedir())
+  expect(result).toBe(null)
+})
+
+it("should run for this project", async () => {
+  const result = await isGitRepoDirty(path.join(__dirname, ".."))
+  expect(typeof result).toBe("boolean")
 })

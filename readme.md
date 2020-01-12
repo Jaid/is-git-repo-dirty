@@ -1,33 +1,60 @@
 # is-git-repo-dirty
 
 
-Promise that returns true if a given directory is a dirty git repository.
+<a href="https://raw.githubusercontent.com/Jaid/is-git-repo-dirty/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/is-git-repo-dirty?style=flat-square" alt="License"/></a>  
+<a href="https://actions-badge.atrox.dev/Jaid/is-git-repo-dirty/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fis-git-repo-dirty%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/is-git-repo-dirty/commits"><img src="https://img.shields.io/github/commits-since/Jaid/is-git-repo-dirty/v1.0.1?style=flat-square&logo=github" alt="Commits since v1.0.1"/></a> <a href="https://github.com/Jaid/is-git-repo-dirty/commits"><img src="https://img.shields.io/github/last-commit/Jaid/is-git-repo-dirty?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/is-git-repo-dirty/issues"><img src="https://img.shields.io/github/issues/Jaid/is-git-repo-dirty?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/is-git-repo-dirty"><img src="https://img.shields.io/npm/v/is-git-repo-dirty?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/is-git-repo-dirty/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/is-git-repo-dirty?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/is-git-repo-dirty"><img src="https://img.shields.io/npm/dm/is-git-repo-dirty?style=flat-square&logo=npm" alt="Downloads"/></a>
+
+**Promise that returns true if a given directory is a dirty git repository.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Installation
-<a href='https://npmjs.com/package/is-git-repo-dirty'><img alt='npm logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/npm.png'/></a>
+<a href="https://npmjs.com/package/is-git-repo-dirty"><img src="https://img.shields.io/badge/npm-is--git--repo--dirty-C23039?style=flat-square&logo=npm" alt="is-git-repo-dirty on npm"/></a>
 ```bash
 npm install --save is-git-repo-dirty@^1.0.1
 ```
-<a href='https://yarnpkg.com/package/is-git-repo-dirty'><img alt='Yarn logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/yarn.png'/></a>
+<a href="https://yarnpkg.com/package/is-git-repo-dirty"><img src="https://img.shields.io/badge/Yarn-is--git--repo--dirty-2F8CB7?style=flat-square&logo=yarn&logoColor=white" alt="is-git-repo-dirty on Yarn"/></a>
 ```bash
 yarn add is-git-repo-dirty@^1.0.1
 ```
 
 
 
-## Documentation
-**Kind**: Exported function  
-**Returns**: <code>Promise.&lt;(boolean\|null)&gt;</code> - `true` if repository is dirty, `false` if repository is clean, `null` if given directory is not a git repository  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| directory | <code>string</code> | Absolute path to a git repository directory |
 
-**Example**  
-```javascript
-import isGitRepoDirty from "is-git-repo-dirty"
-const result = await isGitRepoDirty("/my/path")
-result === false
+
+
+
+## Development
+
+
+
+Setting up:
+```bash
+git clone git@github.com:Jaid/is-git-repo-dirty.git
+cd is-git-repo-dirty
+npm install
+```
+Testing:
+```bash
+npm run test:dev
+```
+Testing in production environment:
+```bash
+npm run test
 ```
 
 
@@ -35,7 +62,7 @@ result === false
 ```text
 MIT License
 
-Copyright © 2019, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
+Copyright © 2020, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

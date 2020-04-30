@@ -31,12 +31,20 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "is-git-repo-dirty",
-  "description": "Promise that returns true if a given directory is a dirty git repository.",
+  "description": "Returns true if a given directory is a dirty git repository.",
   "funding": "https://github.com/sponsors/jaid",
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/is-git-repo-dirty"
   },
   "homepage": "https://github.com/Jaid/is-git-repo-dirty",
-  "keywords": []
+  "keywords": [
+    "git",
+    "git-repo",
+    "lib",
+    "library",
+    "promise",
+    "util",
+    "utility"
+  ]
 }

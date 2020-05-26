@@ -1,5 +1,5 @@
-import path from "path"
 import os from "os"
+import path from "path"
 
 const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.join(__dirname, "..", "src")) |> require
 

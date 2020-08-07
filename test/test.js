@@ -4,8 +4,8 @@ import path from "path"
 const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.join(__dirname, "..", "src")) |> require
 
 /**
-   * @type { import("../src") }
-   */
+ * @type { import("../src") }
+ */
 const {default: isGitRepoDirty} = indexModule
 
 it("should run for a non-repository", async () => {

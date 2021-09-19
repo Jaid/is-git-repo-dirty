@@ -47,5 +47,6 @@
     "promise",
     "util",
     "utility"
-  ]
+  ],
+  "type": "module"
 }
